@@ -1,5 +1,5 @@
 import React from 'react'
-import {createBrowserRouter,RouterProvider} from 'react-router-dom'
+import {createHashRouter,RouterProvider} from 'react-router-dom'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import About from './pages/About'
@@ -10,7 +10,7 @@ import Authentication from './Authentication'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 {
   path:'/',
   element:<AppLayout/>,
